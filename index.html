@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LAR</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
@@ -50,16 +50,16 @@
             </div>
             <ul class="header__navigation list-reset">
                 <li class="header__item">
-                    <a href="#" class="header__link">Кто мы</a>
+                    <a href="#who" class="header__link">Кто мы</a>
                 </li>
                 <li class="header__item">
-                    <a href="#" class="header__link">Что мы делаем</a>
+                    <a href="#what" class="header__link">Что мы делаем</a>
                 </li>
                 <li class="header__item">
-                    <a href="#" class="header__link">Работайте у нас</a>
+                    <a href="#work" class="header__link">Работайте у нас</a>
                 </li>
                 <li class="header__item">
-                    <a href="#" class="header__link">Связаться</a>
+                    <a href="#contact" class="header__link">Связаться</a>
                 </li>
             </ul>
         </div>
@@ -70,11 +70,14 @@
             <div class="hero__container">
                 <h1 class="hero__title">LAR запускает собственные проекты на глобальную аудиторию, а также помогает другим стартапам экспертизой и финансами</h1>
                 <p class="hero__text">И мы всегда в поиске инженеров, дизайнеров, продуктовых менеджеров, маркетологов</p>
-                <button class="hero__button">Смотреть вакансии</button>
+                <form action="#jobs">
+                    <button type="submit" class="hero__button">Смотреть вакансии</button>
+                </form>
+
             </div>
         </section>
 
-        <section class="projects">
+        <section class="projects" id="who">
             <ul class="projects__numbers numbers list-reset">
                 <li class="numbers__item">
                     <h3 class="numbers__title">С 1999 года</h3>
@@ -107,7 +110,7 @@
                 </div>
                 <div class="kanbanchi__team">
                     <h5 class="kanbanchi__subtitle">
-                        <a href="#" class="kanbachi__link">Международный стартап из Саратова</a>
+                        <a href="https://vc.ru/flood/20754-kanbanchi-app" target="_blank" class="kanbachi__link">Международный стартап из Саратова</a>
                     </h5>
                     <p class="kanbanchi__text">Читайте на VC, как мы вывели Kanbanchi на глобальный рынок</p>
                 </div>
@@ -133,7 +136,7 @@
             </div>
         </section>
 
-        <section class="other-projects">
+        <section class="other-projects" id="what">
             <div class="other-projects__wrapper">
                 <h2 class="other-projects__title">Присоединяйтесь к работе над Kanbanchi и другими проектами</h2>
                 <p class="other-projects__text">Примеры проектов, на которых можно качать скиллы и быть на острие технологий. Наша задача — превратить их в бизнес с платящими пользователями.</p>
@@ -141,21 +144,21 @@
                     <li class="other-projects__item">
                         <img src="./img/lang-app.jpg" alt="Lang.app" class="other-projects__image">
                         <h5 class="other-projects__subtitle">
-                            <a href="#" class="other-projects__link">Приложение Lang.app</a>
+                            <a href="https://easytolearn.io/" class="other-projects__link" target="_blank".>Приложение Lang.app</a>
                         </h5>
                         <p class="other-projects__text">Прототип сервиса для изучения иностранных языков с помощью видео</p>
                     </li>
                     <li class="other-projects__item">
                         <img src="./img/void_ninja.jpg" alt="Void Ninja" class="other-projects__image">
                         <h5 class="other-projects__subtitle">
-                            <a href="#" class="other-projects__link">VR-игра Void Ninja </a>
+                            <a href="https://www.oculus.com/experiences/quest/4587693931296611/?locale=en_GB" target="_blank". class="other-projects__link">VR-игра Void Ninja </a>
                         </h5>
                         <p class="other-projects__text">Экшн-платформер с элементами управления, основанными на жестах, и инновационной системой передвижения</p>
                     </li>
                     <li class="other-projects__item">
                         <img src="./img/music_side.jpg" alt="Music Side" class="other-projects__image">
                         <h5 class="other-projects__subtitle">
-                            <a href="#" class="other-projects__link">Онлайн-школа Music Side</a>
+                            <a href="https://music-side.ru/" class="other-projects__link" target="_blank".>Онлайн-школа Music Side</a>
                         </h5>
                         <p class="other-projects__text">Выводим на международный рынок платформу для обучения вокалу</p>
                     </li>
@@ -163,7 +166,7 @@
             </div>
         </section>
 
-        <section class="team">
+        <section class="team" id="work">
             <h2 class="team__title">Станьте частью распределённой команды заряженных спецов</h2>
             <p class="team__text">LAR — это разработчики, UI/UX дизайнеры, продакт-менеджеры, маркетологи. У нас главное люди, а не бюрократия. Это значит:</p>
             <ul class="team__features-list list-reset">
@@ -215,23 +218,35 @@
             <div class="reviews__wrapper">
                 <h2 class="reviews__title">Что о нас говорят сотрудники</h2>
                 <p class="reviews__text">У нас работать комфортно, интересно и эффективно. Мы собрали отзывы наших текущих и бывших коллег для того, чтобы поделиться атмосферой сотрудничества с LAR.</p>
-                <ul class="reviews__list list-reset">
-                    <li class="reviews__item reviews__item--kirill">
-                        <p class="reviews__quote">«LAR — команда взрослых, спокойных, твердых специалистов своего дела, которые в нужный момент времени задают правильные вопросы»</p>
-                        <span class="reviews__author">Кирилл, UI/UX дизайнер</span>
-                    </li>
-                    <li class="reviews__item reviews__item--lady">
-                        <p>video</p>
-                    </li>
-                    <li class="reviews__item reviews__item--dmitry">
-                        <p class="reviews__quote">«Мне нравится как меняются наши проекты с течением времени, сохраняя иновационные способы ведения бизнеса»</p>
-                        <span class="reviews__author">Дмитрий, программист</span>
-                    </li>
-                </ul>
+            </div>
+            <div class="reviews__slider">
+                <div class="swiper">
+                    <ul class="reviews__list list-reset swiper-wrapper">
+                        <li class="reviews__item reviews__item--kirill swiper-slide">
+                            <p class="reviews__quote">«LAR — команда взрослых, спокойных, твердых специалистов своего дела, которые в нужный момент времени задают правильные вопросы»</p>
+                            <span class="reviews__author">Кирилл, UI/UX дизайнер</span>
+                        </li>
+                        <li class="reviews__item reviews__item--ekaterina swiper-slide">
+                            <p class="reviews__quote">«Мне очень нравилось работать в этом коллективе за счет дружеской атмосферы. Это была самая поддерживающая команда»</p>
+                            <span class="reviews__author">Екатерина, программист</span>
+                        </li>
+                        <li class="reviews__item reviews__item--dmitry swiper-slide">
+                            <p class="reviews__quote">«Мне нравится как меняются наши проекты с течением времени, сохраняя иновационные способы ведения бизнеса»</p>
+                            <span class="reviews__author">Дмитрий, программист</span>
+                        </li>
+                        <li class="reviews__item reviews__item--alexei swiper-slide">
+                            <p class="reviews__quote">«У нас нет четкой иерархии, плоская структура управления и очень слаженный коллектив, а задачи мотивируют тебя расти»</p>
+                            <span class="reviews__author">Алексей, технический директор</span>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </section>
 
-        <section class="jobs">
+        <section class="jobs" id="jobs">
             <h2 class="jobs__title">Прямо сейчас нам нужны</h2>
             <ul class="jobs__list list-reset">
                 <li class="jobs__item">
@@ -334,7 +349,7 @@
             </ul>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <div class="footer__wrapper">
             <h2 class="footer__title">Напишите нам</h2>
             <p class="footer__text">Расскажите о своих скиллах и приходите работать с нами. Напишите, даже если не нашли подходящую вакансию, но вам есть, что предложить.</p>
@@ -377,7 +392,7 @@
         </div>
     </footer>
 
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/main.js"></script>
     <script src="js/tabs.js"></script>

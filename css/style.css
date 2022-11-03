@@ -250,7 +250,6 @@ textarea:disabled {
   width: 224px;
   height: 60px;
   margin-top: 2.5rem;
-  font-size: 18px;
 }
 
 .projects {
@@ -471,7 +470,7 @@ textarea:disabled {
 .reviews__wrapper {
   max-width: 842px;
   margin: 0 auto;
-  padding: 5rem 0;
+  padding-top: 5rem;
 }
 
 .reviews__title {
@@ -484,10 +483,7 @@ textarea:disabled {
 }
 
 .reviews__list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-top: 3.5rem;
+  margin: 3.5rem 0;
 }
 
 .reviews__item {
@@ -517,14 +513,42 @@ textarea:disabled {
               url("../img/kirill.png") no-repeat;
 }
 
-.reviews__item--lady {
+.reviews__item--ekaterina {
   background: linear-gradient(0deg, #4A439B 32%, rgba(168, 141, 254, 0.3) 100%),
-  url("../img/lady.png") no-repeat;
+  url("../img/ekaterina.png") no-repeat;
 }
 
 .reviews__item--dmitry {
   background: linear-gradient(0deg, #4A439B 32%, rgba(168, 141, 254, 0.3) 100%),
   url("../img/dmitry.png") no-repeat;
+}
+
+.reviews__item--alexei {
+  background: linear-gradient(0deg, #4A439B 32%, rgba(168, 141, 254, 0.3) 100%),
+  url("../img/alexei.png") no-repeat;
+}
+
+.reviews__slider {
+  position: relative;
+  width: 842px;
+  margin: 0 auto;
+}
+
+.swiper {
+  width: 842px;
+}
+
+.swiper-button-prev {
+  left: -64px;
+}
+
+.swiper-button-next {
+  right: -64px;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+  font-size: 24px;
+  color: #9CA5B6;
 }
 
 .jobs {
