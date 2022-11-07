@@ -1,36 +1,44 @@
-// const swiper = new Swiper('.swiper', {
-//   slidesPerView: "auto",
-//   spaceBetween: 32,
-//   breakpoints: {
-//     // when window width is >= 320px
-//     320: {
-//       slidesPerView: 1.1,
-//     },
-//     450: {
-//       slidesPerView: 1.5,
-//     },
-//     680: {
-//       slidesPerView: 2,
-//     },
-//     786: {
-//       slidesPerView: 2.5,
-//     },
-//     1100: {
-//       slidesPerView: 3,
-//     },
-//     1440: {
-//       slidesPerView: 3,
-//     },
-//   }
-// });
-
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
-  slidesPerView: 3,
   spaceBetween: 32,
   watchOverflow: false,
+  breakpoints: {
+    320: {
+      slidesPerView: 1.2,
+    },
+    360: {
+      slidesPerView: 1.3,
+    },
+    390: {
+      slidesPerView: 1.4,
+    },
+    420: {
+      slidesPerView: 1.5,
+    },
+    450: {
+      slidesPerView: 1.7,
+    },
+    530: {
+      slidesPerView: 1.9,
+    },
+    600: {
+      slidesPerView: 2,
+    },
+    640: {
+      slidesPerView: 2.2,
+    },
+    700: {
+      slidesPerView: 2.5,
+    },
+    850: {
+      slidesPerView: 2.8,
+    },
+    900: {
+      slidesPerView: 3,
+    }
+  },
 
   // If we need pagination
   pagination: {
@@ -45,13 +53,20 @@ const swiper = new Swiper('.swiper', {
 });
 
 
-const swiperGrid = new Swiper(".benefits__wrapper", {
-  slidesPerView: "auto",
-  // slidesPerGroup: 2,
-  spaceBetween: 16,
+const swiperGrid = new Swiper(".team__slider", {
+  slidesPerView: 1.5,
+  direction: 'horizontal',
+  spaceBetween: 32,
   breakpoints: {
-    1060: {
+    320: {
+      slidesPerView: 1.2,
+    },
+    680: {
+      slidesPerView: 1.4,
+    },
+    900: {
       enabled: false,
+      spaceBetween: 0,
     },
   }
 });

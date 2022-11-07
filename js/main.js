@@ -23,9 +23,9 @@ openMenuButton.addEventListener('click', () => {
 
 closeMenuButton.addEventListener('click', () => {
   nav.classList.add('fadeout');
-  setTimeout(() => {
+  // setTimeout(() => {
     nav.classList.add('hide')
-  }, 450);
+  // }, 450);
   headerMenu.classList.remove('hide');
 });
 
@@ -40,31 +40,31 @@ navList.addEventListener('click', (evt) => {
 });
 
 //header sticky
-document.addEventListener('scroll', () => {
-  if (window.scrollY > 100) {
-    header.classList.add('sticky__header');
-    headerMenu.classList.add('sticky__wrapper');
-    headerLogo.forEach((item) => {
-      item.style.fill = '#c51f43';
-    });
-    headerSpan.style.color = '#1B202B';
-    headerBurger.forEach((item) => {
-      item.style.fill = '#1B202B';
-    });
-    headerButton.classList.remove('hide')
-  } else {
-    header.classList.remove('sticky__header');
-    headerMenu.classList.remove('sticky__wrapper');
-    headerLogo.forEach((item) => {
-      item.style.fill = '#ffffff';
-    });
-    headerSpan.style.color = '#ffffff';
-    headerBurger.forEach((item) => {
-      item.style.fill = '#ffffff';
-    });
-    headerButton.classList.add('hide')
-  }
-})
+// document.addEventListener('scroll', () => {
+//   if (window.scrollY > 100) {
+//     header.classList.add('sticky__header');
+//     headerMenu.classList.add('sticky__wrapper');
+//     headerLogo.forEach((item) => {
+//       item.style.fill = '#c51f43';
+//     });
+//     headerSpan.style.color = '#1B202B';
+//     headerBurger.forEach((item) => {
+//       item.style.fill = '#1B202B';
+//     });
+//     headerButton.classList.remove('hide')
+//   } else {
+//     header.classList.remove('sticky__header');
+//     headerMenu.classList.remove('sticky__wrapper');
+//     headerLogo.forEach((item) => {
+//       item.style.fill = '#ffffff';
+//     });
+//     headerSpan.style.color = '#ffffff';
+//     headerBurger.forEach((item) => {
+//       item.style.fill = '#ffffff';
+//     });
+//     headerButton.classList.add('hide')
+//   }
+// })
 
 //video
 
