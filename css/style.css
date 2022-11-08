@@ -595,13 +595,58 @@ textarea:disabled {
 }
 
 .reviews__item {
-  display:flex;
-  flex-direction: column;
+  position: relative;
+  /*display:flex;*/
+  /*flex-direction: column;*/
   max-width: 259px;
   height: 400px;
-  justify-content: flex-end;
-  padding: 22px 24px;
+  /*justify-content: flex-end;*/
+  /*padding: 22px 24px;*/
   border-radius: 0.75rem;
+}
+
+.video {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  border-radius: 0.75rem;
+  background-color: #000000;
+}
+
+.reviews__item:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 0.75rem;
+  color: #FFFFFF;
+}
+
+.reviews__item--kirill:before {
+  content: '';
+  background: url('../img/kirill-borderless.jpg');
+}
+
+.reviews__item--ekaterina:before {
+  content: '';
+  background: url('../img/ekaterina-borderless.jpg');
+}
+
+.reviews__item--dmitry:before {
+  content: '';
+  background: url('../img/dmitry-borderless.jpg');
+}
+
+.reviews__item--alexei:before {
+  content: '';
+  background: url('../img/alexei-borderless.jpg');
+}
+
+.reviews__item:hover:before {
+  display: none;
 }
 
 .reviews__quote {
@@ -622,10 +667,10 @@ textarea:disabled {
               url("../img/kirill.png") no-repeat;
 }
 
-.reviews__item--ekaterina {
-  background: linear-gradient(0deg, #4A439B 32%, rgba(168, 141, 254, 0.3) 100%),
-  url("../img/ekaterina.png") no-repeat;
-}
+/*.reviews__item--ekaterina {*/
+/*  background: linear-gradient(0deg, #4A439B 32%, rgba(168, 141, 254, 0.3) 100%),*/
+/*  url("../img/ekaterina.png") no-repeat;*/
+/*}*/
 
 .reviews__item--dmitry {
   background: linear-gradient(0deg, #4A439B 32%, rgba(168, 141, 254, 0.3) 100%),
@@ -658,6 +703,10 @@ textarea:disabled {
 .swiper-button-prev:after, .swiper-button-next:after {
   font-size: 24px;
   color: #9CA5B6;
+}
+
+.swiper-slide {
+  cursor: pointer;
 }
 
 .jobs {
