@@ -4,6 +4,7 @@ const swiper = new Swiper('.swiper', {
   loop: true,
   spaceBetween: 32,
   watchOverflow: false,
+  preventClicksPropagation: true,
   breakpoints: {
     320: {
       slidesPerView: 1.2,
