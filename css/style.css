@@ -597,13 +597,10 @@ textarea:disabled {
 
 .reviews__item {
   position: relative;
-  /*display:flex;*/
-  /*flex-direction: column;*/
   max-width: 259px;
   height: 400px;
-  /*justify-content: flex-end;*/
-  /*padding: 22px 24px;*/
   border-radius: 0.75rem;
+  cursor: pointer;
 }
 
 .reviews__video {
@@ -691,10 +688,6 @@ textarea:disabled {
 .swiper-button-prev:after, .swiper-button-next:after {
   font-size: 24px;
   color: #9CA5B6;
-}
-
-.swiper-slide {
-  cursor: pointer;
 }
 
 .jobs {
@@ -960,6 +953,10 @@ textarea:disabled {
   .team__terms {
     grid-template-columns: repeat(8, 1fr);
     gap: 0;
+  }
+  
+  .terms__item {
+    cursor: pointer;
   }
 }
 

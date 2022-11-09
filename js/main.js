@@ -39,14 +39,15 @@ navList.addEventListener('click', (evt) => {
 reviewList.addEventListener('click', (evt) => {
   const target = evt.target;
   video.forEach((item, i) => {
+    item.pause();
     if (target === item) {
-      video[i].setAttribute('controls' , 'controls');
       play[i].classList.add('hide');
+      video[i].setAttribute('controls' , 'controls');
     }
     if (target.parentElement === play[i]) {
+      play[i].classList.add('hide');
       video[i].play();
       video[i].setAttribute('controls' , 'controls');
-      play[i].classList.add('hide');
     }
   });
 });
