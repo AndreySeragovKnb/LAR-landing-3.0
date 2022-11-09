@@ -39,7 +39,7 @@ navList.addEventListener('click', (evt) => {
 reviewList.addEventListener('click', (evt) => {
   const target = evt.target;
   video.forEach((item, i) => {
-    item.pause();
+    // item.pause();
     if (target === item) {
       play[i].classList.add('hide');
       video[i].setAttribute('controls' , 'controls');
