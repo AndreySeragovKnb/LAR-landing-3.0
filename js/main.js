@@ -41,7 +41,6 @@ reviewList.addEventListener('click', (evt) => {
   video.forEach((item, i) => {
     if (target.parentElement === play[i] || target === item) {
       play[i].classList.add('hide');
-      console.log(video[i].paused)
       if (video[i].paused) {
         video.forEach((item) => {
           item.pause();
