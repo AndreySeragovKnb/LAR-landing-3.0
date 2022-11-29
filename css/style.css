@@ -533,7 +533,7 @@ textarea:disabled {
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   padding: 2.5rem;
-  margin: 2.5rem 0;
+  margin-top: 2.5rem;
   background: #F9F7FD;
   border-radius: 0.75rem;
 }
