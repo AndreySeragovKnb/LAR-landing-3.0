@@ -9,17 +9,29 @@ const swiper = new Swiper('.swiper', {
     320: {
       slidesPerView: 1.2,
     },
+    340: {
+      slidesPerView: 1.25,
+    },
     360: {
       slidesPerView: 1.3,
     },
+    375: {
+      slidesPerView: 1.35,
+    },
     390: {
       slidesPerView: 1.4,
+    },
+    410: {
+      slidesPerView: 1.45,
     },
     420: {
       slidesPerView: 1.5,
     },
     450: {
       slidesPerView: 1.7,
+    },
+    490: {
+      slidesPerView: 1.8,
     },
     530: {
       slidesPerView: 1.9,
